@@ -1,0 +1,207 @@
+:root {
+  font-family: 'Roboto Regular' Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: hsl(234, 29%, 20%);
+  --darkslategrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(228, 5%, 79%);
+  --white: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./src/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./src/Roboto-Regular.ttf');
+}
+
+body {
+  font-family: 'Roboto Bold';
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.newsletter{
+  max-width: 786px;
+  max-height: 528px;
+  background-color: var(--white);
+  display: flex;
+  padding: 1.45rem;
+  border-radius: 2rem;
+  & aside {
+    display: flex;
+  }
+  & .imageNewsLetter{
+    justify-content: end;
+    & img{
+    height: 100%;
+    }
+  }
+  & .artNewsLetter{
+    width: 100%;
+    font-family: 'Roboto Regular';
+    font-size: 14.2px;
+    padding: 2.24rem;
+    padding-right: 1rem;
+    color: var(--charcoalGrey);
+    & h1 {
+      margin: 0;
+      margin-top: 1.1rem;
+      font-family: 'Roboto Bold';
+      font-size: 3.12rem;
+    }
+    & p {
+      display: flex;
+      gap: .85rem;
+      & img {
+        width: 19px;
+      }
+    }
+    & p:nth-child(2){
+      margin-top: .5rem;
+    }
+    & p:nth-child(3){
+      margin-top: 1.4rem;
+      margin-bottom: .2rem;
+    }
+    & p:nth-child(4){
+      margin-top: .55rem;
+      margin-bottom: .2rem;
+    }
+    & p:nth-child(5){
+      margin-top: .55rem;
+      margin-bottom: 1rem;
+    }
+    & form {
+      & label {
+        display: block;
+        margin-top: 2.2rem;
+        font-family: 'Roboto Bold';
+        font-size: .67rem;
+        color: var(--charcoalGrey);
+        margin-bottom: .5rem;
+      }
+      & input[type='email']{
+        box-sizing: border-box;
+        font-size: .9rem;
+        width: 100%;
+        padding: 1rem;
+        padding-left: 1.2rem;
+        border-radius: .5rem;
+        border: 1px solid var(--grey);
+        margin-bottom: 1.3rem;
+        outline: none;
+      }
+      & input[type='email']:focus{
+        border-color: var(--charcoalGrey);
+        outline: var(--charcoalGrey);
+      }
+      & input[type='submit']{
+        font-family: 'Roboto Bold';
+        font-size: .9rem;
+        cursor: pointer;
+        width: 100%;
+        padding: 1.05rem;
+        border-radius: .5rem;
+        color: var(--grey);
+        background-color: var(--darkslategrey);
+        border: none;
+      }
+      & input[type='submit']:hover{
+        box-shadow: 0px 8px 15px rgb(255, 123, 87);
+        color: var(--white);
+        background: rgb(254, 84, 116);
+        background-image: linear-gradient(90deg, rgba(254, 84, 116, 1) 32%, rgba(255, 104, 62, 1) 65%);
+      }
+      & input[type='email']::placeholder{
+        color: var(--grey);
+      }
+      
+    }
+
+  }
+  
+}
+
+
+/* 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Roboto Bold';
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
